@@ -1,0 +1,45 @@
+\section{Impulse-responses to a monetary policy shock}
+\label{sec:results}
+We now consider how the two models respond to the same innovation in the policy rate. We assume that innovations in the policy rate follow the process
+\begin{eqnarray}
+\nu_t &=& \rho_{\nu} \nu_{t-1}+\epsilon_{\nu t} \nonumber
+\end{eqnarray}
+with $\rho_{\nu}=0.5$. We feed a positive $25$ basis point shock to the models. The responses are plotted in Figure \ref{fig_monetary_std_nt}. In the figure, we plot deviations from the flex price equilibrium. We will refer to the these deviations as ''gaps''.
+
+As can be seen in Figure \ref{fig_monetary_std_nt}, the models respond qualitatively similar in terms of the real interest rate gap, inflation, real wages and profits. However, in the standard model, there is a substantial negative response of output and employment whereas in the worker-capitalist model, there is no response at all.
+
+We start analyzing the responses of the worker-capitalist model, as the insights from this exercise will better enable us to uncover the mechanism in the standard model. Looking at the right-hand side of \ref{fig_monetary_std_nt}, we see that in response to the surprise increase in the nominal interest rate, the real interest rate increases. From the Euler Equation \eqref{wc_euler_log}, we then know that the worker consumption gap must start out negative to follow an upward sloping path. The worker income gap must follow the same path, as worker consumption equals worker income in equilibrium. Hence, either wages, labor supply or both must initially fall. We see that it is only real wages that falls while labor supply does not move. 
+
+Why is there no response in labor supply? Because of the parametric assumption of $\sigma=1$ (KPR-preferences), the income and substitution effect with respect to changes in the wage level cancel. To see this, insert the market clearing condition \eqref{wc_mcbonds_log} in the intratemporal optimality condition \eqref{wc_labor_log}:
+\begin{eqnarray}
+&& \varphi  \tilde n_t + \sigma  \tilde c_t =  \tilde \omega_t \nonumber \\
+\Rightarrow  && \tilde \varphi n_t + \sigma ( \tilde \omega_t+ \tilde n_t) =  \tilde \omega_t \nonumber \\
+\Leftrightarrow && (\varphi+\sigma)  \tilde n_t = (1-\sigma) \tilde \omega_t \nonumber
+\end{eqnarray} 
+and under $\sigma=1$:
+\begin{eqnarray}
+\tilde n_t = 0 \nonumber
+\end{eqnarray}
+Since labor supply cannot move, the fall in worker consumption matches the fall in wages. And because wages fall, so does the marginal cost of production, which leads to a fall in inflation and an increase in profits. The countercyclical response of profits, however, has no effect on the equilibrium since it is consumed by the hand-to-mouth capitalists.
+
+Having explained the responses in the worker-capitalist model, it is now easy to understand the standard model responses. As in the worker-capitalist model, the real interest rate gap increases, which leads to a fall in the consumption gap. There is also a fall in the real wage gap and an increase in the profit gap. However, in contrast to the worker-capitalist model now hours worked and the output gap decreases. To explain this, we again insert in the market clearing condition \eqref{std_mcbonds_log} in the intratemporal optimality condition \eqref{std_labor_log}:
+\begin{eqnarray}
+&& \varphi \tilde n_t + \sigma \tilde  c_t =  \tilde \omega_t \nonumber\\
+\Rightarrow  &&\varphi \tilde  n_t + \sigma \left( \bar S( \tilde \omega_t+ \tilde n_t) + (1-\bar S)\tilde d_t   \right) =  \tilde \omega_t \nonumber \\
+\Leftrightarrow && (\varphi+\sigma \bar S)  \tilde n_t = (1-\sigma \bar S) \tilde \omega_t -\sigma (1-\bar S) \tilde d_t \nonumber
+\end{eqnarray}
+and under $\sigma=1$:  
+\begin{eqnarray}
+\lb{std_response}
+\tilde n_t = \frac{1-\bar S}{\varphi+\bar S}(\tilde \omega_t-\tilde d_t) \nonumber
+\end{eqnarray}  
+where $\frac{1-\bar S}{\varphi+\bar S}$ is decreasing in $\bar S$ on the unit interval. Under the current parameterization, the labor share of income is close to $55$ per cent. Because profits increase in response to the shock, the representative household experiences a direct income effect which depresses labor supply. This effect is naturally decreasing in the steady state labor share, as seen in \eqref{std_response}. We also see that as the labor share decreases, the response of labor supply to changes in the real wage increases. With a larger profit income share in steady state, the relative income effect of wage changes is depressed. The labor supply schedule then become less downward sloping, and labor supply becomes more responsive to changes in the real wage level, even though we have KRP preferences.  
+
+The standard model is thus capable to generate negative responses of employment and output to a positive innovation in the policy rate because the steady share of profit is substantial and because these profits respond countercyclically. When returned to the representative household, its responsiveness of labor supply to real wages increase while it experiences a negative income effect to monetary policy shocks. 
+
+This transmission mechanism does not seem reasonable. Few households have substantial non-labor income and there is, to our knowledge, no evidence that profit income responds procyclically to monetary policy shocks.\footnote{The VAR evidence presented by \citet{Christiano2005} shows that firm profits respond procyclically to monetary policy shocks.} 
+
+
+
+
+

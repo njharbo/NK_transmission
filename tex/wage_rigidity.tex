@@ -1,0 +1,41 @@
+\section{Rigid wages: A solution}
+\label{sec:wage_rigidity}
+
+%We have discussed the transmission mechanism of monetary policy shocks in the standard model. By contrasting this model to a simple heterogeneous agent model that separates workers from capitalist, we have shown the distribution and response of profits is instrumental for the output response. 
+
+The only sources of frictions in the standard model are the assumptions of rigid price setting and monopolistic competition. Labor markets are assumed to operate without any frictions. This assumption is key for the transmission mechanism. With households reoptimzing their labor supply decision at high frequency, profits serve the dual role of producing a countercyclical income effect, as well as driving a wedge between labor income and consumption in the steady state. If constraining the households to not be able to reoptimize at high frequency, as is the case with sufficiently rigid wage setting, we should not expect this transmission mechanism to be operating.
+
+In this section, we therefore explore whether assuming rigid wage setting escapes the implausible transmission mechanism of the standard model. We focus on one particular way of introducing rigid wage setting, the assumption of constant resetting probabilities (the ''Calvo model'') introduced by \citet{Erceg2000}, which is frequently used in the literature. We will explore the role of profits in the same fashion as before; by comparing the impulse-responses of the representative agent economy to the worker-capitalist economy (without financial trade).
+
+Constant wage resetting probabilities take the same form in both models. We only discuss the setup briefly here, for a full specification see \citet{Gali1999} Ch. 6. In the standard (worker-capitalist) model, we assume that there is a continuum of ex ante identical households (workers), indexed by $j$, that can trade complete state-contingent consumption claims among themselves. Each household (worker) is assumed to be a monopolistic supplier of its particular labor type and chooses $W_{jt}$. There is a representative intermediate aggregate factor producer that combines the particular labor types $N_{jt}$ with the Dixit-Stiglitz aggregator into an aggregate factor input $N_t$, with elasticity of substitution $\epsilon_w$. As a consequence, each household (worker) faces labor demand schedule of the form
+\begin{eqnarray}
+\lb{labor_demand}
+N_{jt}=\left(\frac{W_{jt}}{W_t}\right)^{-\epsilon_w} N_t
+\end{eqnarray}
+Under frictionless wage setting, households (workers) each period optimize over $W_t$ to maximize their present discounted lifetime utility. However, households (workers) can only reset their wages with probability $1-\theta_w$ in each period. Conditional on resetting, households (workers) choose a wage level that maximizes their present discounted lifetime utility. Conditional on not being able to reset, they are constrained to supply the labor demanded given by \eqref{labor_demand}.
+
+From these assumptions, in addition to the model equations described in Section \ref{sec:model}, the equilibria of both models are characterized by a ''wage Phillips curve'' and an accounting equation for the evolution of real wages:
+\begin{eqnarray}
+\pi^w_t &=& \beta E_t \pi^w_{t+1} + \lambda_w \hat \mu_{t} \\
+\omega^w_t &=& \omega_{t-1} + \pi^w_{t} - \pi_t + \Delta \omega^n_t
+\end{eqnarray}
+where $\lambda_w=\frac{(1-\theta_w)(1-\beta \theta_w)}{\theta_w} \frac{1}{1+\epsilon_w \varphi}$ and $\hat \mu_{t}$ is the log deviation of real wages from the average marginal rate of substitution between consumption and leisure for the households (workers).
+
+As in \citet{Gali1999}, we set $\epsilon_w=6$ and $\theta_w=\frac{3}{4}$, which correspond to an average wage duration spell of four quarters. We feed in the same monetary shock as in the previous sections. The responses are plotted in Figure \ref{fig_monetary_std_nt_rigidwages}.
+
+Before comparing the responses of the standard and worker-capitalist model, we discuss how adding wage rigidities in the standard model changes the responses compared to the flex price model responses shown on the left hand side of Figure \ref{fig_monetary_std_nt}. Adding wage rigidities to the standard model changes the magnitude of several responses. Most notably, it almost eliminates the response in real wages completely, as well as making the response of profits procyclical. The reason is that with rigid wage setting, nominal wages respond very little to the shock. Hence, nominal marginal costs of the intermediate goods firms respond only little. In response, the inflation response is muted but sufficiently strong to almost close the real wage gap. As the real wage gap is almost zero, the movement of profits is solely determined by the movement in output. Profits decrease because production decreases, but the effect is mitigated due to diminishing returns to scale.       
+
+Turning to the comparison of the responses between the standard and the worker-capitalist model, we see that they are almost indistinguishable. With an average wage resetting duration of 4 quarters, the income and substitution effects matter less for the determination of hours worked at the shorter horizon. The majority of households (workers) are instead constrained to supply whatever labor is demanded from equation \eqref{labor_demand}. Labor demand follows directly from consumption demand, as labor is the sole factor of production. Thus, in response to the decline in consumption demand coming from the positive real interest rate gap in both models, output and hours worked are thus forced to adjust. 
+
+%That profit response matters for the similarity of the model responses. Because of its small response, aggregate consumption demand moves in accordance with labor income in both models. In a counterfactual thought-experiment where profit had showed a large countercyclical response, as in the model withut wage rigidities, the aggregate consumption demand gap would have been small, and so       
+
+Assuming rigid wages thus seem to offer a solution to the implausible transmission mechanism in the textbook 3-equation model. In the appendix, we show that the difference between the standard and the worker-capitalist model is decreasing in  $\theta_w$, which means that strength of this solution is increasing in the degree of wage rigidities. Whether the actual economies feature substantially rigid wage setting at the business cycle frequency is an empirical question to which we do not contribute in this paper. However, in light of our findings, to have accurate measures of the degree of rigidity seems important for proceeding with these class of model.    
+
+    
+  
+  
+
+
+
+  
+

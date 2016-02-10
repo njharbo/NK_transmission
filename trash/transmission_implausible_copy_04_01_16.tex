@@ -1,0 +1,257 @@
+\documentclass{article}[11pt]
+\linespread{1.5}
+\usepackage{fullpage}
+\usepackage{amsmath,theorem,amssymb,graphicx, pgfplots, tabularx, placeins}
+\usepackage[semicolon,authoryear]{natbib}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{csquotes}
+
+
+
+\newcommand{\lb}{\label}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition}
+\newtheorem{definition}{Definition}
+
+\title{The New Keynesian Transmission Mechanism\footnote{We are grateful for helpful comments by Adrien Auclert, L\'idia  Brun, Martin Eichenbaum, Jordi Gal\'i, John Hassler, Jean-Baptiste Michau, Matthew Rognlie, Johan S\"{o}derberg, Karl Walentin, Iv\`{a}n Werning, Andreas Westermark and seminar participants at the IIES, MIT Macro Lunch, Universitat Pompeu Fabra, Sveriges Riksbank, ENTER Jamboree in Mannheim 2015, UiO-NHH Macro Workshop at Norges Bank, SED Annual Meeting 2015 and EEA Annual Meeting 2015. All errors are our own.}}
+
+\author{
+  Tobias Broer\footnote{IIES, CEPR. tobias.broer@iies.su.se}\\
+  \and
+  Niels-Jakob Harbo Hansen\footnote{IIES. nielsjakobharbo.hansen@iies.su.se}\\
+  \and
+  Per Krusell\footnote{IIES, CEPR, NBER. per.krusell@iies.su.se}\\
+  \and
+  Erik \"{O}berg\footnote{IIES. erik.oberg@iies.su.se}\\
+}
+\date{\parbox{\linewidth}{\centering%
+  November 2015 \endgraf\bigskip
+  {\Large \textbf{Preliminary and incomplete - please do not quote!}}\endgraf}}
+
+\begin{document}
+
+\maketitle 
+
+
+
+\input{./tex/abstract.tex}
+\newpage
+\input{./tex/introduction.tex}
+\newpage
+\input{./tex/model.tex}
+\newpage
+\input{./tex/results_main.tex}
+\newpage
+\input{./tex/bond_trade.tex}
+\newpage
+\input{./tex/wage_rigidity.tex}
+\newpage
+\input{./tex/tfp.tex}
+\newpage
+\input{./tex/discussion.tex}
+\newpage
+\bibliographystyle{apalike}
+\bibliography{../bibtex/bibtex}
+\clearpage
+\input{./tex/appendix.tex}
+
+
+
+\end{document}
+
+
+\subsection{The 3-equation formulation of the two models}
+\colorbox{red}{Discuss with co-authors!} Both models can be summarized by three linear equations.\footnote{Complete this} We derive these in the appendix, and only state them here: 
+\begin{eqnarray}
+\lb{wc_phillips}
+\pi_t &=& \beta E_t \pi_{t+1}+\kappa_{m} \tilde{y}_t \\
+\lb{wc_dis}
+\tilde{y}_t &=& -\upsilon_{m} \left(i_t-E_t \pi_{t+1}-\rho\right)+E_t \tilde{y}_{t+1} \\
+\lb{wc_taylor}
+i_t &=& \beta + \phi_{\pi} \pi_t + \phi_{\pi} \tilde{y}_t + \nu_t 
+\end{eqnarray} 
+where the $m \in \{wc, std\}$ denotes a model-specific parameter.
+
+
+$\kappa_{wc}=\frac{1+\varphi-(1-\sigma)(1-\alpha)}{(1-\sigma)(1-\alpha+\alpha \epsilon)}\frac{(1-\theta) (1-\beta \theta)}{\theta}$ and $ \upsilon_{wc}=\frac{(1-\sigma)(1-\alpha
+)}{\sigma(1+\varphi)}$.
+
+
+
+
+
+
+Former Appendix::
+
+
+
+
+
+
+In this appendix, we derive the Phillip curve, the DIS curve and the equation for the natural real interest rate of the worker-capitalist model, \eqref{wc_phillips}, \eqref{wc_dis} and \eqref{wc_naturalrate}.
+
+Of any variable $X_t$, $\bar{X}$ the steady state value, $x_t$ denotes the log, $\hat{x}_t$ the log deviation from the steady state and $\tilde{x}_t$ the log deviation from the flex price equilibrium.
+% with one exception. That is that we define $g_t \equiv \log (1+\tau_t)$. 
+
+\subsection{The Phillips curve}
+
+In the worker-capitalist model the intermediate firms are controlled by the capitalists. The later discount consumption across time by means of the discount factor $\beta$. Thus, compared to the standard model the market discount factor, $Q_{t,t+k}$, in the firms' problem is replaced by $\beta^k$.
+\begin{eqnarray}
+\max_{P^*_t} &&  \sum_{k=0}^{\infty} \theta^k E_t \beta^k \left\{ P^*_t Y_{t+k|t}-\Psi_{t+k}(Y_{t+k|t})\right\} \label{eq:firm_prob_wc} \\
+&& \text{s.t.}  \Psi_{t+k}(Y_{t+k|t})=\frac{W_{t+k}}{P_{t+k}}\left(\frac{N_{t+k|t}}{A_{t+k}}\right)^{\frac{1}{1-\alpha}} \nonumber \\
+&&  Y_{it} = \left(\frac{P_{it}}{P_t}\right)^{-\epsilon}Y_t \nonumber
+\end{eqnarray} 
+The solution is characterized by
+\begin{eqnarray}
+\lb{int_foc_wc}
+\sum_{k=0}^{\infty} \theta^k E_t \left\{ \beta^k Y_{t+k|t} (P_t^* - \mathcal{M} \psi_{t+k|t}) \right\}=0
+\end{eqnarray}
+where $\psi_{t+k|t}=\frac{\partial \Psi_{t+k}(Y_{t+k|t})}{\partial Y_{t+k|t}}$ and $\mathcal{M}=\frac{\epsilon}{\epsilon-1}$ is the markup over marginal cost that would have prevailed under flexible price setting $(\theta=0)$.
+
+Now define $\Pi_{t,t+k}=\frac{P_{t+k}}{P_t}$ and $MC_{t+k|t}=\frac{\psi_{t+k|t}}{P_{t+k}}$ to get
+\begin{eqnarray}
+\sum_{k=0}^{\infty} \theta^k E_t \left\{\beta^{k}Y_{t+k|t}\left(\frac{P^*_t}{P_{t-1}}-\mathcal{M}MC_{t+k|t}\Pi_{t-1,t+k}\right)\right\}=0
+\end{eqnarray}
+Log-linearizing this equation around the steady state gives us
+\begin{eqnarray}
+\lb{step}
+p^*_t-p_{t-1}=(1-\beta \theta) \sum_{k=0}^{\infty} (\beta \theta)^k E_t \left\{\hat{mc}_{t+k|t} + (p_{t+k}-p_{t-1}) \right\}
+\end{eqnarray}
+Notice that this equation is identical to the similar equation in the standard model.\footnote{\emph{E.g.} page 45 in \cite{Gali2009}}. This goes to show that letting capitalists own the firm does not changes the log-linearised optimality condition for pricing. The reason is that $Q_{t,t+k}=\beta^k$ holds in the steady state in the standard model. 
+
+We aim to derive an expression for the individual firm's marginal cost as a function of the average marginal cost in the economy. From the labor market clearing condition \eqref{labor_clearing}, production function \eqref{tech} and demand function \eqref{demand} we get
+\begin{eqnarray}
+N_t &=& \int_{i=0}^{1} N_{it} di \\
+&=& \int_{i=0}^{1} \left(\frac{Y_{it}}{A_t}\right)^{\frac{1}{1-\alpha}} di \\
+\lb{step1}
+&=& \left(\frac{Y_{t}}{A_t}\right)^{\frac{1}{1-\alpha}} \int_{i=0}^{1} \left(\frac{P_{it}}{P_t}\right)^{\frac{-\epsilon}{1-\alpha}} di
+\end{eqnarray}
+The integral in \eqref{step1} is measure of price dispersion which can be shown to be unity to a first order approximation. Taking logs, we get
+\begin{eqnarray}
+\lb{step2}
+y_t=a_t+(1-\alpha)n_t
+\end{eqnarray}
+The economy's average marginal cost is defined by
+\begin{eqnarray}
+mc_t &=& (w_t-p_t)-mpn_t \\
+&=& (w_t-p_t)-\frac{1}{1-\alpha}(a_t-\alpha y_t) - \log (1-\alpha)
+\end{eqnarray}
+An individual firms expected marginal cost in period $t+k$ if resetting price in period $t$ is
+\begin{eqnarray}
+mc_{t+k|t} &=& (w_{t+k}-p_{t+k})-mpn_{t+k|t} \\
+ &=& (w_{t+k}-p_{t+k})-\frac{1}{1-\alpha}(a_{t+k}-\alpha y_{t+k|t}) - \log (1-\alpha)
+\end{eqnarray}
+Using the demand function \eqref{demand}, we can thus write
+\begin{eqnarray}
+\lb{step3}
+mc_{t+k|t} &=& mc_{t+k}-\frac{\alpha \epsilon}{1-\alpha} (p^*_t-p_{t+k})
+\end{eqnarray}
+Substituting \eqref{step3} into \eqref{step}, we get
+\begin{eqnarray}
+p^*_t-p_{t-1}=(1-\beta \theta) \sum_{k=0}^{\infty} (\beta \theta)^k E_t \left\{ \Theta \hat{mc}_{t+k} + (p_{t+k}-p_{t-1}) \right\}
+\end{eqnarray}
+where $\Theta=\frac{1-\alpha}{1-\alpha+\alpha \epsilon}$ which can be rewritten as
+\begin{eqnarray}
+p^*_t-p_{t-1}=\beta \theta E_t \left\{p^*_{t+1}-p_t\right\}+(1-\beta \theta ) \Theta \hat{mc}_t+\pi_t 
+\end{eqnarray}
+Using the law of motion for inflation \eqref{prices_lom} we get that
+\begin{eqnarray}
+\lb{phillips_intstep}
+\pi_t=\beta E_t pi_{t+1} + \lambda \hat{mc}_t
+\end{eqnarray}
+where $\lambda=\frac{(1-\theta) (1-\beta \theta)}{\theta } \Theta$.
+
+We now derive an expression for $\hat{mc}_t$. The labor f.o.c. \eqref{labor_foc} implies that
+\begin{eqnarray}
+\lb{step4}
+w_t-p_t &=& \sigma c_{wt}+\varphi n_t
+\end{eqnarray}
+From the workers budget constraint \eqref{worker_bc} we get that
+\begin{eqnarray}
+(w_t-p_t)+n_t &=&  c_{wt} \label{step5}
+\end{eqnarray} 
+Combining \eqref{step4} and \eqref{step5} we get that
+\begin{eqnarray}
+\lb{step6}
+w_t-p_t =\frac{\sigma + \varphi}{1-\sigma} n_t
+\end{eqnarray}
+Turning to $mc_t$, \eqref{step5} and production technology \eqref{tech} implies that 
+\begin{eqnarray}
+mc_t &=& (w_t-p_t)-mpn_t \\
+\lb{step7}
+&=& \frac{1+\varphi-(1-\sigma)(1-\alpha)}{(1-\sigma)(1-\alpha)}y_t-\frac{1+\varphi}{(1-\sigma)(1-\alpha)}a_t -\log(1-\alpha)
+\end{eqnarray}
+Under flexible prices we know that $mc_t=-\mu \equiv \log \mathcal{M}$. Hence, we define the natural level of output $y^n_t$ from
+\begin{eqnarray}
+\lb{step8}
+-\mu &=& \frac{1+\varphi-(1-\sigma)(1-\alpha)}{(1-\sigma)(1-\alpha)}y^n_t-\frac{1+\varphi}{(1-\sigma)(1-\alpha)}a_t -\log(1-\alpha)
+\end{eqnarray}
+Subtracting \eqref{step8} from \eqref{step7} we get
+\begin{eqnarray}
+\lb{step9}
+\hat{mc}_t=\frac{1+\varphi-(1-\sigma)(1-\alpha)}{(1-\sigma)(1-\alpha)}\tilde{y}_t
+\end{eqnarray}
+Substituting \eqref{step9} into \eqref{phillips_intstep} we get the final Phillips curve
+\begin{eqnarray}
+\pi_t=\beta E_t pi_{t+1} + \kappa_{wc} \tilde{y}_t
+\end{eqnarray}
+where $\kappa_{wc}=\frac{1+\varphi-(1-\sigma)(1-\alpha)}{(1-\sigma)(1-\alpha+\alpha \epsilon)}\frac{(1-\theta) (1-\beta \theta)}{\theta}$
+
+
+\subsection{The DIS curve}
+The DIS curve in the worker-capitalist model \eqref{wc_dis} is derived from the workers' Euler equation \eqref{euler}, which in logs reads:
+\begin{eqnarray}
+\lb{step9}
+c_{wt}=E_t c_{wt+1}-\frac{1}{\sigma}(i_t-E_t \pi_{t+1}-\rho)
+\end{eqnarray}
+We write this equation in deviations from the flex price equilibrium:
+\begin{eqnarray}
+\lb{step10}
+\tilde{c}_{wt}=\tilde{c}_{wt+1}-\frac{1}{\sigma}(i_t-E_t \pi_{t+1}-r^n_t)
+\end{eqnarray} 
+with
+\begin{eqnarray}
+\lb{int_natural}
+r^n_t \equiv \rho+\sigma \Delta c^n_{wt+1}
+\end{eqnarray}
+where $c^n_{wt}$ is the equilibrium level of consumption under flexible prices.
+
+Next we find an expression for $\tilde{c}_{wt}$. We use \eqref{step3}, \eqref{step4} and the production technology \eqref{tech} to get
+\begin{eqnarray}
+\lb{step11}
+c_{wt}=\frac{1+\varphi}{(1-\sigma)(1-\alpha)}(y_t-a_t)
+\end{eqnarray} 
+and so 
+\begin{eqnarray}
+\lb{step12}
+\tilde{c}_{wt}=\frac{1+\varphi}{(1-\sigma)(1-\alpha)}\tilde{y}_t
+\end{eqnarray}
+
+Finally, substituting \eqref{step12} into \eqref{step10}, we get the DIS curve
+\begin{eqnarray}
+\tilde{y}_{t}=\tilde{y}_{t+1}-\hat{\upsilon}(i_t-E_t \pi_{t+1}-r^n_t)
+\end{eqnarray}
+where $\upsilon_{wc}=\frac{(1-\sigma)(1-\alpha
+)}{\sigma(1+\varphi)}$.
+
+\subsection{The natural real interest rate}
+Here we derive the expression for the natural real interest rate \eqref{wc_naturalrate}. It is defined by \eqref{int_natural}. Using \eqref{step11} we get that
+\begin{eqnarray}
+\lb{step13}
+r^n_t=\rho+\frac{\sigma (1+\varphi)}{(1-\sigma)(1-\alpha)} \left(\Delta y^n_{t+1}-\Delta a_{t+1} \right)
+\end{eqnarray}
+From \eqref{step8} we get an expression for the natural output gap
+\begin{eqnarray}
+y^n_t=-\frac{(\mu-\log(1-\alpha))(1-\sigma)(1-\alpha)}{1+\varphi-(1-\sigma)(1-\alpha)} + \frac{1+\varphi}{1+\varphi-(1-\sigma)(1-\alpha)}a_t
+\end{eqnarray}
+and so
+\begin{eqnarray}
+\lb{step14}
+\Delta y^n_{t+1}= \frac{1+\varphi}{1+\varphi-(1-\sigma)(1-\alpha)}\Delta a_{t+1}
+\end{eqnarray}
+Substituting \eqref{step14} into \eqref{step13} we get the expression for the natural level of the real interest rate:
+\begin{eqnarray}
+r^n_t=\rho+\xi^a_{wc} \Delta a_{t+1} 
+\end{eqnarray}
+where $\xi^a_{wc}=\frac{\sigma (1+\varphi)}{1+\varphi-(1-\sigma)(1-\alpha)}$.

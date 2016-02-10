@@ -1,0 +1,44 @@
+\section{Robustness: Allowing financial trade}
+\label{sec:bond_trade}
+In the setup of the worker-capitalist model, we disallowed financial trade between the two households. We made this assumption to simplify the analysis. As a robustness exercise, we will in this section consider the case where we allow financial trade. 
+
+Without further assumptions, allowing the capitalist to trade in the bond market implies that the model becomes non-stationary. In response to a monetary policy shock, we have seen that real wages respond procyclically and profits respond countercyclically. One household will therefore become indebted to the other. The consumption smoothing motive makes this indebtedness permanent. Hence, after a monetary policy shock, the equilibrium does not converge back to the steady state from which it started.
+
+To allow for financial trade in the model we therefore assume that the capitalist faces quadratic bond holding costs, which ensures that the capitalist holds zero financial wealth in the long-run equilibrium. This assumption is commonly used to close two-country international macro models, see e.g. \citep{Schmitt-Grohe2003}.
+
+Thus, we change the capitalist problem described in Section \ref{sec:model} to 
+\begin{eqnarray}
+\max_{C_{ct}, B_{ct}} && E_0 \sum_{t=0}^{\infty} \beta^t \left( \frac{C_{ct}^{1-\sigma}}{1-\sigma}\right) \nonumber \\
+\lb{worker_bc}
+\text{s.t.} && P_t C_{wt} + Q_t B_{ct} \leq B_{ct-1}+P_t D_t-\frac{\zeta}{2}B_{ct-1}^2 \nonumber
+\end{eqnarray}
+with the associated Euler equation
+\begin{eqnarray}
+\lb{bt_euler}
+Q_{t} &=& \beta E_t \left\{\frac{(1-\zeta B_{ct}) C^{-\sigma }_{ct+1}}{C^{-\sigma }_{ct}} \nonumber \frac{P_t}{P_{t+1}}\right\} \nonumber
+\end{eqnarray}
+Log-linearizing around the flex-price equilibrium, we find 
+\begin{eqnarray}
+\lb{bt_euler_log}
+\tilde c_{ct} &=& -\frac{1}{\sigma}(i_t-E_t \pi_{t+1}-\rho) + E_t \tilde c_{ct+1} +\zeta Y^n_t \tilde b_{ct}
+\end{eqnarray}
+where $\tilde b_{ct}$ is defined as $\tilde b_{ct} = \frac{B_{ct}}{Y^{n}_t}$, i.e. the private debt-to-GDP ratio, where GDP is measured by its flex price value.
+
+The goods and bond market clearing conditions are now
+\begin{eqnarray}
+C_{wt}+C_{ct}+\frac{\zeta}{2}B_{ct-1}^2=Y_t  \nonumber \\
+B_{ct}+B_{wt}=0 \nonumber 
+\end{eqnarray}
+In the flex-price equilibrium, the labor share of GDP is constant and so there are no gains from financial trade. Thus $B^n_{ct}=B^n_{wt}=0$. Using this and log-linearizing around the flex-price equilibrium, we find 
+\begin{eqnarray}
+\lb{bt_mcgoods_log}
+\bar S \tilde c_{wt}+ (1-\bar S) \tilde c_{ct} &=& \tilde y_t  \\
+\lb{bt_mcbonds_log}
+\tilde c_{wt} &=& \tilde \omega_t + \tilde n_t
+\end{eqnarray}
+The rest of the worker-capitalist model is unaffected.\footnote{Discuss convergence? With $\zeta \rightarrow 0$ the log-linear solution to of this model converges to that of the standard model. With $\zeta \rightarrow \infty$ it converges to that of the worker-capitalist model without trade.}
+
+Before showing results, we need to calibrate $\zeta$. Because wages respond strongly and procyclically and profits respond strongly and countercyclically, the gains from trade between the capitalist and the worker after a monetary shock are very large. When $\zeta \rightarrow 0$, the debt-to-GDP ratio increases from 0 to a peak response of $92$ percent, or a debt-to-worker income of $166$ percent, to a 25 basis point shock with half-life of one quarter. We calibrate $\zeta$ by constraining the response in this variable. Although still implausibly large, we constrain the debt-to-GDP to not respond more than $10$ percent at peak, which implies that $\zeta=3$. 
+
+We feed in the same monetary shock as in the previous section. The responses are plotted in Figure \ref{fig_monetary_std_bt}. As can be seen, the worker-capitalist model still has virtually no response in output and employment. Why is this? Because the debt response is limited to 10 percent of GDP, worker consumption is still close to labor income in every period. Hence, the determination of labor supply is similar to the model without financial trade between the two households. Workers do not experience the positive income effect coming from the increase in profits. And with KRP-preferences, the income and substitution effect is still approximately of the same size, and there is no response to changes in the wage level. 
+

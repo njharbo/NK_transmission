@@ -1,0 +1,114 @@
+\section{Two models}
+\label{sec:model}
+We refer to the model described in \citet{Gali1999} Ch. 3 as the \emph{standard model}. As a tool for investigating the transmission mechanism in the standard model, we will compare the impulse-responses of this model to a model where we give the profit income to a non-working household. We name the latter model the \emph{worker-capitalist model}. In this section we describe the setup of these two models. Apart from the household sector, the models are identical in the way firm set prices and how the central bank sets the interest rate. Since these components are well-known, we will describe them only briefly.  
+
+As for notation, if not otherwise stated we will for any variable $X_t$ denote its steady state value with $\bar X$, its value in the equilibrium under flexible price setting with $X^n$ (the natural equilibrium), its log value with $x_t$, its log deviation from steady state with $\hat x_t$ and its deviation from the flex price equilibrium with $\tilde x_t$.
+
+\subsection{The standard model: The representative household}
+The standard model has a representative household. This household derives utility from consuming a final good and disutility from working. It collects wage and profit income and can trade in a risk free nominal bond in zero net supply. The representative household's problem is
+\begin{eqnarray}
+\max_{C_{t}, B_{t+1}, N_t} && E_0 \sum_{t=0}^{\infty} \beta^t \left( \frac{C_{t}^{1-\sigma}}{1-\sigma}-\frac{N_t^{1+\varphi}}{1+\varphi}\right) \nonumber\\
+\lb{rephouse_bc}
+\text{s.t.} && P_t C_{t} + Q_{t} B_{t} \leq B_{t-1} + W_t N_t + P_t D_t \nonumber
+\end{eqnarray}
+where $P_t$ denotes the price level, $C_t$ real consumption, $Q_t$ the nominal price of the bond $B_t$, $W_t$ the nominal wage level, $N_t$ labor supply and $D_t$ real profit income. The solution is characterized by an Euler equation and an intratemporal optimality condition:
+\begin{eqnarray}
+\lb{std_euler}
+Q_{t} &=& \beta E_t \left\{\frac{C^{-\sigma }_{t+1}}{C^{-\sigma }_{t}} \frac{P_t}{P_{t+1}}\right\} \nonumber \\
+\lb{std_labor}
+\frac{W_t}{P_t}C_{t}^{-\sigma} &=& N_t^{\varphi} \nonumber
+\end{eqnarray}
+Log-linearizing around the flex-price equilibrium, we find  
+\begin{eqnarray}
+\lb{std_euler_log}
+\tilde c_{t} &=& -\frac{1}{\sigma}(i_t-E_t \pi_{t+1}-\rho) + E_t \tilde c_{t+1} \\
+\lb{std_labor_log}
+\tilde \omega_t &=& \varphi \tilde n_t + \sigma \tilde c_t
+\end{eqnarray}
+where $\omega_t=w_t-p_t$, $\rho=-\log \beta$, $i_t=-\log{Q_t}$ and $\pi_t = p_t-p_{t-1}$. 
+
+The goods market clears when
+\begin{eqnarray}
+C_t = Y_t \nonumber
+\end{eqnarray}
+where $Y_t$ is total output. The bond market clears when $B_t=0$, which implies that
+\begin{eqnarray}
+C_t = \frac{W_t}{P_t}N_t+D_t \nonumber
+\end{eqnarray}
+Log-linearizing around the flex-price equilibrium, we find 
+\begin{eqnarray}
+\lb{std_mcgoods_log}
+\tilde c_t &=& \tilde y_t \\
+\lb{std_mcbonds_log}
+\tilde c_t &=& \bar S (\tilde \omega_t+\tilde n_t) + (1-\bar S)\tilde d_t
+\end{eqnarray}
+where $\bar S=\frac{\bar W \bar N}{\bar Y \bar P}$ is the steady state labor income share of output.
+
+
+\subsection{The worker-capitalist model: The households}
+The worker-capitalist model is constructed with the purpose of isolating the effect of profits in the standard model. It has a representative worker and a representative capitalist. The worker can trade in a risk-less bond while the capitalist is constrained to be hand-to-mouth. This simplifying assumption implies that in equilibrium, each household consumes neither more nor less than its factor income, and enables us to ignore the evolution of the wealth distribution. An alternative specification would constrain the worker to be hand-to-mouth while allowing the capitalist to trade in the bond market. These two models have the same implications for the determination of labor supply, since both imply that the worker only consumes labor income in equilibrium. However, as discovered by  \citet{Bilbiie2008}, the model with a constrained worker has no determinate log-linear equilibrium under a standard Taylor rule. To be able to keep the rest of the model exactly the same as the standard model, we therefore constrain the capitalists instead.  
+
+Disallowing financial trade between the two households may seem as a non-innocent assumption. As a robustness check, we will in Section \ref{sec:bond_trade} consider a model where financial trade between the households is allowed. For reasonable calibrations, the results are not significantly affected.
+
+The worker derives utility from consuming the final good and disutility from working. She collects wage income and can trade a in a risk free nominal bond. In contrast to the representative household in the standard model, she does not receive any profit income. The worker's problem is
+\begin{eqnarray}
+\max_{C_{wt}, B_{wt+1}, N_t} && E_0 \sum_{t=0}^{\infty} \beta^t \left( \frac{C_{wt}^{1-\sigma}}{1-\sigma}-\frac{N_t^{1+\varphi}}{1+\varphi}\right) \nonumber \\
+\lb{worker_bc}
+\text{s.t.} && P_t C_{wt} + Q_{t} B_{wt} \leq B_{wt-1} + W_t N_t \nonumber
+\end{eqnarray} 
+The solution is characterized by an Euler equation and an intratemporal optimality condition:
+\begin{eqnarray}
+\lb{wc_euler}
+Q_{t} &=& \beta E_t \left\{\frac{C^{-\sigma }_{wt+1}}{C^{-\sigma }_{wt}} \nonumber \frac{P_t}{P_{t+1}}\right\} \\
+\lb{wc_labor}
+\frac{W_t}{P_t}C_{wt}^{-\sigma} &=& N_t^{\varphi} \nonumber
+\end{eqnarray}
+Log-linearizing around the flex-price equilibrium, we find 
+\begin{eqnarray}
+\lb{wc_euler_log}
+\tilde c_{wt} &=& -\frac{1}{\sigma}(i_t-E_t \pi_{t+1}-\rho) + E_t \tilde c_{wt+1} \\
+\lb{wc_labor_log}
+\tilde{\omega}_t &=& \varphi \tilde n_t + \sigma \tilde c_{wt}
+\end{eqnarray}
+The capitalist receives profits and consumes them hand-to-mouth. The capitalist's problem is  
+\begin{eqnarray}
+\max_{C_{ct}} && E_0 \sum_{t=0}^{\infty} \beta^t \left( \frac{C_{ct}^{1-\sigma}}{1-\sigma}\right) \nonumber \\
+\lb{worker_bc}
+\text{s.t.} && P_t C_{wt} \leq P_t D_t \nonumber
+\end{eqnarray}
+The goods market clears when
+\begin{eqnarray}
+C_{wt}+C_{ct} \leq Y_t \nonumber
+\end{eqnarray}
+where $Y_t$ is total output.  The bond market clears when $B_{wt} = 0$ which implies that 
+\begin{eqnarray}
+C_{wt} &\leq& \frac{W_t}{P_t}N_t \nonumber
+\end{eqnarray}
+Log-linearizing around the flex-price equilibrium, we find 
+\begin{eqnarray}
+\lb{wc_mcgoods_log}
+\bar S \tilde c_{wt}+ (1-\bar S) \tilde c_{ct} &=& \tilde y_t \\
+\lb{wc_mcbonds_log}
+\tilde c_{wt} &=& \tilde \omega_t + \tilde n_t
+\end{eqnarray}
+where $\bar S=\frac{\bar W \bar N}{\bar Y \bar P}$ is the steady state labor income share of output.
+
+\subsection{Other model components}
+The production sector, the firm pricing problem and the central bank response function is identical in the two models and follows \citet{Gali1999} Ch. 3. We describe them briefly here. 
+
+There is a representative firm that produces the final good $Y_t$ by combining a continuum of intermediate goods $Y_{it}$ through the Dixit-Stiglitz aggregator with elasticity of substitution $\epsilon_p$. These intermediate goods are produced by a continuum of firms, indexed by $i$, with technology $Y_{it}=A_t N_{it}^{1-\alpha}$. The intermediate goods producers set their prices to maximize present discounted profits with the market discount factor $Q_t$. They can, however, only reset their prices with probability $1-\theta_p$ in every period. From these assumptions we can derive a log-linear relationship between inflation and the deviation of average marginal cost from steady state:
+\begin{eqnarray}
+\pi_t = \beta E_t \pi_{t+1}+\lambda \hat{mc}_t
+\end{eqnarray}  
+where $\lambda = \frac{(1-\theta_p)(1-\beta \theta_p)}{\theta_p} \frac{1-\alpha}{1-\alpha+\alpha \epsilon_p}$. 
+
+The model is closed by assuming that a central bank sets the interest rate according to a log-linear Taylor rule:
+\begin{eqnarray}
+i_t = \rho + \phi_{\pi}\pi_t + \phi_{y}\tilde y_t +\nu_t
+\end{eqnarray}
+
+\subsection{Parameterization}
+All parameters are the same in the two models. We choose the same calibration as that in \citet{Gali2009} Ch. 3. A time period should be interpreted as a quarter of a year. We set an elasticity of intertemporal substitution $1/\sigma=1$ (which is a special case of KPR preferences), Frisch elasticity $\varphi=1$, $\alpha=1/3$, $\epsilon_p=6$, $\theta_p=2/3$, $\beta=0.99$. For the Taylor rule, we set $\phi_{\pi}=1.5,\phi_{y}=0.125$. 
+
+For this parameterization, it is easily confirmed that the log-linear equilibrium system of both models has a unique stable solution. 
+

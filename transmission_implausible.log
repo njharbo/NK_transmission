@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.2)  10 FEB 2016 17:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.4.2)  10 FEB 2016 20:02
 entering extended mode
 **transmission_implausible.tex
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\transmission_implausible.tex
@@ -583,7 +583,14 @@ File: csquotes.cfg
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 
-(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\transmission_implausible.aux)
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\transmission_implausible.aux
+
+LaTeX Warning: Label `worker_bc' multiply defined.
+
+
+LaTeX Warning: Label `worker_bc' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
@@ -596,8 +603,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
-
-(C:\Users\nharb\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+ (C:\Users\nharb\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count145
 \scratchdimen=\dimen186
@@ -630,163 +636,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\abstract.tex) [1
 
 {C:/Users/nharb/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (C:\Users\nharb\Dropbox\research\nj_tobi_erik\articl
-e\tex\introduction.tex
-
-Package natbib Warning: Citation `Gali2009' on page 2 undefined on input line 6.
-
-[2]
-
-Package natbib Warning: Citation `Auclert2015' on page 3 undefined on input line 14.
-
-
-Package natbib Warning: Citation `McKay2015' on page 3 undefined on input line 14.
-
-
-Package natbib Warning: Citation `McKay2013' on page 3 undefined on input line 14.
-
-
-Package natbib Warning: Citation `Ravn2012a' on page 3 undefined on input line 14.
-
-
-Package natbib Warning: Citation `Lorenzoni2009' on page 3 undefined on input line 17.
-
-
-Package natbib Warning: Citation `Christiano2011' on page 3 undefined on input line 17.
-
-
-Package natbib Warning: Citation `Werning2012' on page 3 undefined on input line 17.
-
-) [3] (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\model.tex
-
-Package natbib Warning: Citation `Gali1999' on page 4 undefined on input line 3.
-
-[4]
-
-Package natbib Warning: Citation `Bilbiie2008' on page 5 undefined on input line 49.
-
-
-LaTeX Warning: Reference `sec:bond_trade' on page 5 undefined on input line 51.
-
-[5]
-
-Package natbib Warning: Citation `Gali1999' on page 6 undefined on input line 97.
-
-
-Package natbib Warning: Citation `Gali2009' on page 6 undefined on input line 111.
-
-[6]) [7] (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\results_main.tex
-
-LaTeX Warning: Reference `fig_monetary_std_nt' on page 8 undefined on input line 7.
-
-
-LaTeX Warning: Reference `fig_monetary_std_nt' on page 8 undefined on input line 9.
-
-
-LaTeX Warning: Reference `fig_monetary_std_nt' on page 8 undefined on input line 11.
-
-
-LaTeX Warning: Reference `wc_euler_log' on page 8 undefined on input line 11.
-
-
-LaTeX Warning: Reference `wc_mcbonds_log' on page 8 undefined on input line 13.
-
-
-LaTeX Warning: Reference `wc_labor_log' on page 8 undefined on input line 13.
-
-
-LaTeX Warning: Reference `std_mcbonds_log' on page 8 undefined on input line 25.
-
-
-LaTeX Warning: Reference `std_labor_log' on page 8 undefined on input line 25.
-
-[8]
-
-LaTeX Warning: Reference `std_response' on page 9 undefined on input line 36.
-
-
-Package natbib Warning: Citation `Christiano2005' on page 9 undefined on input line 40.
-
-) [9] (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\bond_trade.tex
-
-Package natbib Warning: Citation `Schmitt-Grohe2003' on page 10 undefined on input line 7.
-
-
-LaTeX Warning: Reference `sec:model' on page 10 undefined on input line 9.
-
-[10]
-
-LaTeX Warning: Reference `fig_monetary_std_bt' on page 11 undefined on input line 43.
-
-) [11] (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\wage_rigidity.tex
-
-Package natbib Warning: Citation `Erceg2000' on page 12 undefined on input line 8.
-
-
-Package natbib Warning: Citation `Gali1999' on page 12 undefined on input line 10.
-
-
-LaTeX Warning: Reference `labor_demand' on page 12 undefined on input line 15.
-
-
-LaTeX Warning: Reference `sec:model' on page 12 undefined on input line 17.
-
-[12]
-
-Package natbib Warning: Citation `Gali1999' on page 13 undefined on input line 24.
-
-
-LaTeX Warning: Reference `fig_monetary_std_nt_rigidwages' on page 13 undefined on input line 24.
-
-
-LaTeX Warning: Reference `fig_monetary_std_nt' on page 13 undefined on input line 26.
-
-
-LaTeX Warning: Reference `labor_demand' on page 13 undefined on input line 28.
-
-) [13] (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\tfp.tex
-
-LaTeX Warning: Reference `sec:results' on page 14 undefined on input line 4.
-
-
-Package natbib Warning: Citation `Gali1999' on page 14 undefined on input line 6.
-
-
-Package natbib Warning: Citation `Gali2004' on page 14 undefined on input line 6.
-
-
-Package natbib Warning: Citation `Francis2005' on page 14 undefined on input line 6.
-
-
-Package natbib Warning: Citation `Basu2006' on page 14 undefined on input line 6.
-
-
-LaTeX Warning: Reference `sec:results' on page 14 undefined on input line 8.
-
-
-LaTeX Warning: Reference `fig_tfp_std_nt' on page 14 undefined on input line 12.
-
-
-LaTeX Warning: Reference `fig_tfp_std_nt' on page 14 undefined on input line 14.
-
-) [14] (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\discussion.tex) [15]
+e\tex\introduction.tex [2]) [3]
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\model.tex [4] [5] [6]) [7]
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\results_main.tex [8]) [9]
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\bond_trade.tex [10]) [11]
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\wage_rigidity.tex [12]) [13]
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\tfp.tex) [14]
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\discussion.tex) [15]
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\transmission_implausible.bbl) [16]
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\tex\appendix.tex
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\figures\monetary_std_nt.tex
-<./figures/monetary_std_nt.pdf, id=77, 597.23125pt x 845.1575pt>
+<./figures/monetary_std_nt.pdf, id=75, 597.23125pt x 845.1575pt>
 File: ./figures/monetary_std_nt.pdf Graphic file (type pdf)
  <use ./figures/monetary_std_nt.pdf>
 Package pdftex.def Info: ./figures/monetary_std_nt.pdf used on input line 3.
 (pdftex.def)             Requested size: 469.75502pt x 373.82883pt.
 )
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\figures\monetary_std_bt.tex
-<./figures/monetary_std_bt.pdf, id=79, 597.23125pt x 845.1575pt>
+<./figures/monetary_std_bt.pdf, id=77, 597.23125pt x 845.1575pt>
 File: ./figures/monetary_std_bt.pdf Graphic file (type pdf)
  <use ./figures/monetary_std_bt.pdf>
 Package pdftex.def Info: ./figures/monetary_std_bt.pdf used on input line 3.
 (pdftex.def)             Requested size: 469.75502pt x 379.24611pt.
 )
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\figures\monetary_std_nt_rigidwages.tex
-<./figures/monetary_std_nt_rigidwages.pdf, id=81, 597.23125pt x 845.1575pt>
+<./figures/monetary_std_nt_rigidwages.pdf, id=79, 597.23125pt x 845.1575pt>
 File: ./figures/monetary_std_nt_rigidwages.pdf Graphic file (type pdf)
 
 <use ./figures/monetary_std_nt_rigidwages.pdf>
@@ -794,58 +668,45 @@ Package pdftex.def Info: ./figures/monetary_std_nt_rigidwages.pdf used on input 
 (pdftex.def)             Requested size: 469.75502pt x 379.24611pt.
 )
 (C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\figures\tfp_std_nt.tex
-<./figures/tfp_std_nt.pdf, id=83, 597.23125pt x 845.1575pt>
+<./figures/tfp_std_nt.pdf, id=81, 597.23125pt x 845.1575pt>
 File: ./figures/tfp_std_nt.pdf Graphic file (type pdf)
  <use ./figures/tfp_std_nt.pdf>
 Package pdftex.def Info: ./figures/tfp_std_nt.pdf used on input line 3.
 (pdftex.def)             Requested size: 469.75502pt x 379.24611pt.
-))
-
-Package natbib Warning: There were undefined citations.
-
-[17
+)) [17
 
  <C:/Users/nharb/Dropbox/research/nj_tobi_erik/article/figures/monetary_std_nt.pdf>] [18 <C:/Users/nharb/Dropbox/researc
 h/nj_tobi_erik/article/figures/monetary_std_bt.pdf>] [19 <C:/Users/nharb/Dropbox/research/nj_tobi_erik/article/figures/m
 onetary_std_nt_rigidwages.pdf>] [20 <C:/Users/nharb/Dropbox/research/nj_tobi_erik/article/figures/tfp_std_nt.pdf>]
-(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\transmission_implausible.aux
+(C:\Users\nharb\Dropbox\research\nj_tobi_erik\article\transmission_implausible.aux)
 
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20312 strings out of 493921
- 475094 string characters out of 3144877
+ 20308 strings out of 493921
+ 475054 string characters out of 3144877
  589863 words of memory out of 3000000
- 23170 multiletter control sequences out of 15000+200000
- 14012 words of font info for 54 fonts, out of 3000000 for 9000
+ 23168 multiletter control sequences out of 15000+200000
+ 13395 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 63i,13n,74p,1632b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on transmission_implausible.pdf (20 pages, 339946 bytes).
+ 63i,13n,74p,1649b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on transmission_implausible.pdf (20 pages, 322979 bytes).
 PDF statistics:
- 186 PDF objects out of 1000 (max. 8388607)
+ 178 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
